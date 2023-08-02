@@ -1,0 +1,11 @@
+.about {
+    &__video {
+        .drop-shadow-cien-2:hover {
+            .hover-box--extend {
+                img {
+                    @apply scale-75;
+                }
+            }
+        }
+    }
+}

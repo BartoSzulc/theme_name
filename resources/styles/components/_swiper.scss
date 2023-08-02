@@ -1,0 +1,24 @@
+.swiper-pagination {
+    
+    &-bullets {
+        @apply relative bottom-0 flex w-auto space-x-2 #{!important};
+    }
+    &-bullet {
+        @apply inline-block h-2.5 w-2.5 rounded-full m-0 opacity-100 transition-colors bg-white border border-solid border-primary #{!important};
+        &-active {
+            @apply bg-primary border-primary #{!important};
+        }
+       
+    }
+}
+
+.swiper-wrapper {
+    @apply items-center;
+    .swiper-slide {
+        @apply h-auto self-stretch;
+        > div {
+            @apply h-full;
+        }
+    }
+}
+

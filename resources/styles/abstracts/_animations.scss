@@ -1,0 +1,13 @@
+.transition-custom {
+    @apply transition-all ease-in duration-300;
+}
+.bounce2 {
+    animation: bounce2 3s linear infinite;
+    
+  }
+  @keyframes bounce2 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  

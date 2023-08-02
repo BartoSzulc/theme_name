@@ -1,0 +1,66 @@
+.offer {
+    &__tabs {
+        .tab-header {
+            @apply flex items-center w-full;
+            .home__oferta--box {
+                @apply max-h-[140px] w-full transition-kaemde;
+                img {
+                    @apply max-h-[140px] transition-kaemde;
+                }
+                .hover-box {
+                    // @apply w-[calc((140/444)*100%)] 
+                    @apply w-[134px] -right-px -bottom-px h-full;
+                    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                    @apply flex items-end justify-end pb-30 pr-30 delay-100 duration-200 ease-linear;
+                    svg {
+                        @apply top-0 relative transition-kaemde;
+                    } 
+                }
+                &:hover {
+                    .hover-box {
+                        svg {
+                            @apply -top-1;
+                        }
+                    }
+                }
+                
+            }
+            &.active {
+                .home__oferta--box {
+                    @apply max-h-[160px];
+                    > div {
+                        @apply shadow-cien-1;
+                    }
+
+                    img {
+                        @apply max-h-[160px];
+                    }
+                    .hover-box {
+                        svg {
+                            @apply rotate-180;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .tab-content {
+            @apply flex flex-wrap lg:flex-nowrap justify-between px-30 md:px-[68px] xl:w-[calc(100%+136px)] xl:-left-[68px] relative;
+            
+        }
+        
+        
+    }
+}
+.swiperContain {
+    @apply overflow-hidden py-10 lg:py-[90px] w-full px-5 xl:px-12 relative grow-0 shrink-0;
+    .swiper-slide {
+        .box {
+            @apply bg-white py-10 px-5 lg:px-10 lg:py-[70px] flex flex-col items-center transition-kaemde hover:lg:shadow-cien-1 hover:shadow-cien-1-mobile;
+            .title {
+                @apply text-5xl lg:text-6xl font-semibold mt-5 lg:mt-16 text-center;
+            }
+        }
+    }
+   
+}

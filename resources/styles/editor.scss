@@ -1,0 +1,10 @@
+.form {
+   @apply hidden;
+}
+.editor-styles-wrapper {
+   @apply px-5 font-primary mx-auto #{!important};
+   
+   .edit-post-visual-editor__post-title-wrapper  {
+      @apply text-6xl text-center py-full;
+   }
+}

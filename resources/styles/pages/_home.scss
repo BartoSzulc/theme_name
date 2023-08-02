@@ -1,0 +1,129 @@
+.home {
+    &__hero {
+        .swiperHero {
+            @apply overflow-hidden drop-shadow-cien-2 relative z-30;
+            .swiper-slide .content {
+                transform: scale(0.5);
+              }
+              
+              .swiper-slide-active .content,
+              .swiper-slide-duplicate-active .content {
+                transform: scale(1);
+            }
+        }
+    }
+    &__oferta {
+        &--box {
+            @apply relative;
+            &:hover {
+                .hover-box {
+                    @apply opacity-100;
+                }
+            }
+            .hover-box {
+                @apply w-[140px] -right-px h-full -bottom-px;
+                clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+                @apply flex items-end justify-end pb-5 pr-30 delay-100 duration-200 ease-linear;
+            }
+        }
+        .title {
+            @media (max-width:1280px) {
+                br {
+                    @apply hidden;
+                }
+            }
+        }
+    }
+    &__em-doro {
+        .box-hover {
+            &:hover {
+                .hover-box--extend {
+                    img {
+                        @apply scale-75;
+                    }
+                }
+            }
+        }
+    }
+    &__realizacje {
+        .swiperRealizacje {
+            .swiper-slide {
+               .realizacja {
+                    @apply relative;
+                    .hover-box {
+                        @apply delay-100 duration-200 ease-linear;
+                    }
+                    &:hover {
+                        .hover-box {
+                            @apply opacity-100;
+                        }
+                    }
+                     
+                }
+            }
+        }
+    }
+    &__blog {
+        .blog {
+            .hover-box {
+                @apply delay-100 duration-200 ease-linear opacity-0;
+            }
+            &:hover {
+                .hover-box {
+                    @apply opacity-100;
+                }
+            }
+        }  
+    }
+    &__testimonials {
+        .swiperOpinie {
+            .swiper-slide > div {
+                @apply h-auto;
+            }
+            .swiper-slide  {
+                @apply  bg-white border border-black/20 p-5 lg:p-10
+            }
+        }
+        .swiperReferences--before {
+            .hover-box--extend {
+                @apply xl:h-[200px] xl:w-[200px] 4xl:h-[328px] 4xl:w-[328px] #{!important};
+                .svg {
+                    @apply xl:pl-8 xl:pb-8 4xl:pl-10 4xl:pb-10 #{!important};
+                }
+            }
+            &:hover {
+                .hover-box--extend {
+                    img {
+                        @apply scale-75;
+                    }
+                }
+            }
+            
+            
+        }
+        
+    }
+
+}
+.realizacja {
+    @apply relative;
+    .hover-box {
+        @apply delay-100 duration-200 ease-linear -z-[1];
+    }
+    &:hover {
+        .hover-box {
+            @apply opacity-100 visible z-[0];
+        }
+    }
+     
+}
+.blog {
+    .hover-box {
+        @apply delay-100 duration-200 ease-linear opacity-0;
+    }
+    &:hover {
+        .hover-box {
+            @apply opacity-100;
+        }
+    }
+}

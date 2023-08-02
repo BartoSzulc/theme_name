@@ -1,0 +1,97 @@
+.btn-primary {
+    
+    background: linear-gradient(225deg, #8EC43F 0%, #91B508 100%);
+    @apply bg-primary;
+    @extend .transition-kaemde;
+    @apply rounded-tl-lg rounded-br-lg h-60 flex items-center justify-center text-button font-bold text-white min-w-[228px] px-5 relative z-[1];
+
+    &::before {
+        @apply bg-secondary absolute inset-0 -z-[1] opacity-0 rounded-tr-lg rounded-bl-lg;
+        content: "";
+        @extend .transition-kaemde;
+    }
+    &:hover {
+        @apply rounded-tr-lg rounded-bl-lg rounded-tl-none rounded-br-none shadow-cien-1;
+        &::before {
+            @apply opacity-100 delay-100;
+        }
+    }
+    
+   
+
+}
+.btn-white {
+
+}
+.hoverlink {
+   
+}
+
+.disabled {
+    @apply cursor-not-allowed opacity-50;
+}
+
+.gclose {
+    @extend .transition-kaemde;
+    @apply bg-primary p-3 rounded-full  #{!important};
+    svg {
+        @extend .transition-kaemde;
+        @apply w-auto h-auto #{!important};
+    }
+}
+.gprev {
+    @apply w-60 h-60 bg-transparent rotate-180 #{!important};
+    svg {
+        @extend .transition-kaemde;
+        @apply w-auto h-auto #{!important};
+        path {
+            @apply fill-primary #{!important};
+        }
+        rect {
+            @extend .transition-kaemde;
+        }
+        circle {
+            @extend .transition-kaemde;
+        }
+    }
+    &:hover {
+        svg {
+            
+            
+            rect {
+                @apply fill-white;
+            }
+            circle {
+                @apply fill-white;
+            }
+        }
+    }
+}
+.gnext {
+    @apply w-60 h-60 bg-transparent #{!important};
+    svg {
+        @extend .transition-kaemde;
+        @apply w-auto h-auto #{!important};
+        path {
+            @apply fill-primary #{!important};
+        }
+        rect {
+            @extend .transition-kaemde;
+        }
+        circle {
+            @extend .transition-kaemde;
+        }
+    }
+    &:hover {
+        svg {
+            
+            
+            rect {
+                @apply fill-white;
+            }
+            circle {
+                @apply fill-white;
+            }
+        }
+    }
+}

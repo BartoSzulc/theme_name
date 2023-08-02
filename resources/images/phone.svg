@@ -1,0 +1,59 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="g3720">
+<g id="g3722">
+<g id="path3724">
+<path d="M38.9141 10.5469V6.2543V10.5469Z" fill="#383436"/>
+<path d="M38.9141 10.5469V6.2543" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="g3726">
+<g id="path3728">
+<path d="M7.28906 6.25437V49.0828H38.9126V35.2735" fill="#383436"/>
+<path d="M7.28906 6.25437V49.0828H38.9126V35.2735" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="g3730">
+<g id="Clip path group">
+<mask id="mask0_1440_14" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+<g id="clipPath3736">
+<path id="path3734" d="M58.5 58.5V1.5H1.5V58.5H58.5Z" fill="white" stroke="white" stroke-width="3"/>
+</g>
+</mask>
+<g mask="url(#mask0_1440_14)">
+<g id="g3732">
+<g id="g3738">
+<g id="path3740">
+<path d="M38.9126 6.25415V3.6397C38.9126 2.27669 37.8074 1.17173 36.4441 1.17173H9.75762C8.39438 1.17173 7.28906 2.27669 7.28906 3.6397V6.25415H27.7298" fill="#383436"/>
+<path d="M38.9126 6.25415V3.6397C38.9126 2.27669 37.8074 1.17173 36.4441 1.17173H9.75762C8.39438 1.17173 7.28906 2.27669 7.28906 3.6397V6.25415H27.7298" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="g3742">
+<path id="path3744" d="M7.28906 56.36C7.28906 57.7232 8.39426 58.8281 9.75762 58.8281H36.444C37.8074 58.8281 38.9126 57.7232 38.9126 56.36V49.0826H7.28906V56.36Z" fill="#383436" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3750">
+<path id="path3752" d="M25.1424 53.9555C25.1424 55.0817 24.229 55.9949 23.1024 55.9949C21.9757 55.9949 21.0625 55.0817 21.0625 53.9555C21.0625 52.8291 21.9757 51.9159 23.1024 51.9159C24.229 51.9159 25.1424 52.8291 25.1424 53.9555Z" fill="#383436" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3754">
+<path id="path3756" d="M50.803 11.0347H27.3911C26.338 11.0347 25.4844 11.8882 25.4844 12.9411V33.062C25.4844 34.1147 26.338 34.9681 27.3911 34.9681H30.2048V38.2551L36.5874 34.9681H50.803C51.856 34.9681 52.7097 34.1147 52.7097 33.062V12.9411C52.7097 11.8882 51.856 11.0347 50.803 11.0347Z" fill="#383436" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g3758">
+<g id="path3760">
+<path d="M15.5458 29.1311C14.388 27.5569 13.7031 25.6145 13.7031 23.5152C13.7031 21.4159 14.388 19.4736 15.5458 17.8995" fill="#383436"/>
+<path d="M15.5458 29.1311C14.388 27.5569 13.7031 25.6145 13.7031 23.5152C13.7031 21.4159 14.388 19.4736 15.5458 17.8995" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="g3762">
+<g id="path3764">
+<path d="M19.5997 20.218C18.9322 21.1462 18.5391 22.2848 18.5391 23.5152C18.5391 24.7457 18.9322 25.8842 19.5997 26.8123" fill="#383436"/>
+<path d="M19.5997 20.218C18.9322 21.1462 18.5391 22.2848 18.5391 23.5152C18.5391 24.7457 18.9322 25.8842 19.5997 26.8123" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="g3766">
+<path id="path3768" d="M46.7688 28.4327L44.7598 25.6788C44.3591 25.1325 43.5718 25.0245 43.0044 25.4387L41.8497 26.2809C41.6661 26.4431 41.4759 26.3415 41.4007 26.2823C40.7081 25.7434 39.7617 25.0072 38.8404 23.7447C37.9169 22.4791 37.5031 21.3503 37.2014 20.5265C37.1686 20.4398 37.1499 20.2555 37.2832 20.148L38.0388 19.5975L38.4971 19.2631C39.065 18.8479 39.2023 18.0655 38.8025 17.5182L36.7925 14.7642C36.3943 14.2169 35.606 14.1087 35.0368 14.5238C35.0368 14.5238 33.8447 15.1471 33.1705 16.9544C32.2416 19.4441 33.2673 22.0795 35.9942 25.8175C39.7653 30.9827 43.4199 31.21 43.5782 31.2161C45.2466 31.2801 45.8969 30.6949 46.4643 30.1795C46.9845 29.7072 47.1679 28.9816 46.7688 28.4327Z" fill="#383436" stroke="#8EC43F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

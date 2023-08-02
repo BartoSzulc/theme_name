@@ -1,0 +1,140 @@
+/*
+* 
+* variables to apply - override CF7 style
+*
+* Useful CF7 classes:
+* .wpcf7 the wrapper element
+* .wpcf7-form
+* .wpcf7-form-control
+* .wpcf7-text
+* .wpcf7-email
+* .wpcf7-textarea
+* .wpcf7-submit
+*/
+
+.wpcf7 {
+    // all inputs except radios and checkboxes inherit from form-control
+    input[type="text"],
+    input[type="search"],
+    input[type="url"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    input[type="email"],
+    input[type="file"],
+    input[type="submit"],
+    select,
+    textarea {
+        @apply border-2 border-solid rounded-tl-lg rounded-br-lg px-5 text-base h-60;
+        @apply transition-kaemde;
+        @apply appearance-none w-full focus:ring-0;
+        @apply text-black mt-5 sm:mt-30;
+        &::placeholder {
+            @apply text-black/70 sm:text-base text-smallest;
+        }
+        &:focus {
+            @apply border-primary outline-0;
+        }
+        &:hover:not(:focus) {
+            @apply border-primary;
+        }
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    // textarea {
+    //     @apply mb-0 resize-none;
+    // }
+
+    // not valid tip for each control
+    .wpcf7-not-valid-tip {
+        @apply -mt-1 sm:mt-1 left-0.5 absolute text-smallest text-[#FF0000] p-1 #{!important};
+    }
+    .wpcf7-response-output {
+        @extend .transition-kaemde;
+        @apply mt-5 border-primary border w-fit mx-auto bg-white transition-all text-base #{!important};
+    }
+    // validation errors ourput bottom of form
+    .wpcf7-validation-errors {
+        @extend .transition-kaemde;
+        @apply mt-5 border-red-900 border w-fit mx-auto bg-white transition-all text-base #{!important};
+
+    }
+    .wpcf7-list-item {
+        @apply ml-0 #{!important};
+        label {
+            @apply block;
+            .wpcf7-list-item-label {
+                @apply relative  #{!important};
+                @apply flex items-center;
+                
+            }
+        }
+    }
+    .wpcf7-acceptance {
+         @apply relative  #{!important};
+        label span:before {
+            @apply  flex items-center justify-center transition-custom;
+            @apply h-[30px] w-[30px];
+            @apply shrink-0;
+            @apply relative;
+            @apply mr-2.5;
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H30V30H0V0Z' fill='white'/%3E%3C/svg%3E%0A");
+            @apply bg-no-repeat bg-center;
+            
+        }
+        .wpcf7-list-item-label {
+            @apply cursor-pointer;
+        }
+    }
+    .wpcf7-acceptance label > input:checked + span:before {
+        background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H30V30H0V0Z' fill='white'/%3E%3Cg clip-path='url(%23clip0_21_28)'%3E%3Cpath d='M24.7234 6.45933C24.3574 6.09201 23.7573 6.09201 23.3913 6.45933L12.311 17.537L6.60464 11.7916C6.23866 11.4229 5.6426 11.4229 5.27392 11.7916L3.27449 13.7897C2.9085 14.1543 2.9085 14.7544 3.27449 15.1218L11.6396 23.542C12.0055 23.9067 12.6016 23.9067 12.9716 23.542L26.7215 9.79083C27.0928 9.42351 27.0928 8.82206 26.7215 8.45339L24.7234 6.45933Z' fill='%2391B508'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_21_28'%3E%3Crect width='24' height='24' fill='white' transform='translate(3 3)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    }
+
+    .btn {
+        @apply block w-full md:w-auto mx-auto lg:mx-0;
+    }
+}
+.wpcf7-form-control-wrap[data-name="file-123"] {
+    @apply hidden;
+}
+
+.grid-contact {
+    @apply grid sm:grid-cols-2 sm:gap-5;
+}
+.file-custom {
+    @apply relative;
+    @apply mt-5 sm:mt-30;
+    input {
+        @apply m-0 cursor-pointer #{!important};
+        &::placeholder {
+            @apply text-black sm:text-base text-smallest  #{!important};
+        }
+    }
+    .button-file {
+        @apply pointer-events-none text-[34px] text-white font-semibold w-60 xl:w-[134px] h-[calc(100%-2px)] absolute top-px right-0 flex items-center justify-center bg-primary rounded-tl-lg rounded-br-lg;
+        span {
+            @apply flex items-center h-10 relative bottom-2;
+        }
+    }
+}
+.text-polityka {
+    @extend .grid-contact;
+    @apply text-smallest mt-5 sm:mt-30;
+    .wpcf7-form-control-wrap[data-name="acceptance-293"] {
+
+        @apply flex items-center text-white mb-5 sm:mb-0; 
+        a {
+            @extend .transition-kaemde;
+            @apply hover:text-primary;
+        }
+    }
+}

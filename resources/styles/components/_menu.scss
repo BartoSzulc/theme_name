@@ -1,0 +1,254 @@
+
+.header-inner {
+    @apply relative;
+    &::after {
+        content: "";
+        @apply bg-black z-[10] w-[220px] h-2 -bottom-2 left-0 absolute;
+    }
+    nav {
+        @apply z-10 bg-white ;
+        &:after {
+            content: "";
+            @apply bg-white -z-[1] w-full h-full top-0 left-0 absolute;
+        }
+    }
+}
+.header-menu {
+    .menu-item {
+        svg {
+            @apply mr-1.5 2xl:mr-2.5;
+            line {
+                @apply transition-all ease-linear duration-300;
+            }
+        }
+        &__first-level {
+            @apply static;
+            a {
+                @apply px-1.5 2xl:px-2.5 flex items-center font-bold text-black text-base 3xl:text-button transition-all ease-linear duration-300 delay-100;
+                @apply justify-end xl:justify-start;
+                &:not(:hover) {
+                    svg {
+                        line {
+                            @apply stroke-black/[0.15];
+                        }
+                    }
+                }
+                &:hover {
+                    @apply text-primary;
+                }
+                svg {
+                    @apply hidden xl:block;
+                }
+            }
+        }
+        &__second-level {
+            @apply cursor-pointer;
+        }
+        &__current-page {
+            
+            > a {
+                @apply text-primary;
+                svg {
+                    line {
+                        @apply stroke-primary opacity-100 #{!important};
+                    }
+                }
+            }
+           
+        }
+        &.menu-item__current-page.menu-item__third-level {
+            
+            > a {
+                @apply text-black;
+                svg {
+                    line {
+                        @apply stroke-primary opacity-100 #{!important};
+                    }
+                }
+            }
+           
+        }
+        &.menu-item__current-page.menu-item__second-level {
+            
+            > a {
+                @apply text-black;
+                svg {
+                    line {
+                        @apply stroke-primary opacity-100 #{!important};
+                    }
+                }
+            }
+           
+        }
+        // &__dropdown {
+        //     .menu-item__dropdown-menu.depth-0 {
+        //         @apply opacity-0 pointer-events-none transition-all ease-in-out duration-500 hidden;
+        //     }
+        //     &:hover {
+        //         .menu-item__dropdown-menu.depth-0 {
+        //             @apply grid opacity-100 pointer-events-auto;
+        //         }
+        //     }
+        // }
+        &__dropdown-menu {
+            @apply grid grid-cols-2 w-full;
+            @apply -z-[1] absolute xl:top-[138px] left-0 bg-white gap-2.5 -translate-y-[300%] opacity-0 transition-all duration-500 ease-in-out delay-200;
+            
+            li.menu-item {
+                > a {
+                    @apply flex items-center justify-center h-full w-full bg-gray-light text-center;
+                    &:hover {
+                        @apply bg-primary text-white;
+                    }
+                    &.active {
+                        @apply bg-primary text-white;
+                    }
+                }
+            }
+            
+            &.active {
+                @apply  z-[999] xl:-z-[1] -translate-y-0 opacity-100;
+            }
+            .sub-menu {
+                @apply grid grid-cols-4 absolute bottom-0 left-0 bg-white w-full h-full gap-2.5;
+            }
+            .menu-item:nth-child(2) {
+                
+            }
+            &.depth-0 {
+                @apply h-[100px];
+                li.menu-item {
+                    @apply my-2.5;
+                    &:first-child {
+                        @apply ml-2.5;
+                    }
+                    &:last-child {
+                        @apply mr-2.5;
+                        
+                    }
+                    .depth-1 {
+                        @apply -z-[10] h-[80px] -top-[-10px] pointer-events-none transition-all ease-in-out duration-500;
+                        li.menu-item {
+                            @apply my-2.5;
+                             a {
+                                @apply flex items-center justify-center h-full w-full bg-gray-light text-center;
+                                &:hover {
+                                    @apply bg-primary text-white;
+                                }
+                                &.active {
+                                    @apply bg-primary text-white;
+                                }
+                            }
+                            
+                        }
+                        &.open {
+                            @apply top-[calc(100%-10px)] opacity-100 pointer-events-auto;
+                        }
+                        &:not(.open) {
+                            @apply opacity-0 pointer-events-none;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+.js-menu-mobile {
+    box-shadow: 0px 19px 24px rgba(137, 137, 137, 0.25);
+    @apply w-screen min-h-screen z-[99];
+    @apply translate-x-full;
+    @apply transform;
+    @extend .transition-custom;
+    .btn-menu {
+        @apply p-0;
+    }
+    @apply fixed top-0 right-0;
+    @apply bg-white;
+    @apply px-5 py-10;
+    ul {
+        @apply space-y-7;
+    }
+    .menu-item {
+          &__dropdown-menu {
+            @apply grid grid-cols-2 w-full;
+            @apply -z-[1] absolute xl:top-[138px] left-0 bg-white gap-2.5 -translate-y-[300%] opacity-0 transition-all duration-500 ease-in-out delay-200;
+            
+            li.menu-item {
+                > a {
+                    @apply flex items-center justify-center h-full w-full bg-gray-light text-center;
+                    &:hover {
+                        @apply bg-primary text-white;
+                    }
+                    &.active {
+                        @apply bg-primary text-white;
+                    }
+                }
+            }
+            
+            &.active {
+                @apply  z-[999] xl:-z-[1] -translate-y-0 opacity-100;
+            }
+            .sub-menu {
+                @apply grid grid-cols-1 sm:grid-cols-2 absolute bottom-0 left-0 bg-white w-full h-full gap-2.5;
+            }
+            .menu-item:nth-child(2) {
+                
+            }
+            &.depth-0 {
+                @apply h-[80px];
+                li.menu-item {
+                    
+                    .depth-1 {
+                        @apply grid-cols-1 sm:grid-cols-2  -z-[10] h-[290px] sm:h-[120px] md:h-[120px] -top-[-10px] pointer-events-none transition-all ease-in-out duration-500 sm:gap-2.5 gap-y-2.5;
+                        li.menu-item {
+                            @apply my-0 mx-2.5 sm:m-2.5 h-[60px];
+                            
+                            &:nth-child(odd){
+                                @apply sm:mr-0;
+                            }
+                            &:nth-child(even){
+                                @apply sm:ml-0;
+                            }
+                            &:nth-child(1){
+                                @apply sm:mb-0 mt-2.5;
+                            }
+                            &:nth-child(2){
+                                @apply sm:mb-0;
+                            }
+                            &:nth-child(3){
+                                @apply sm:mt-0;
+                            }
+                            &:nth-child(4){
+                                @apply sm:mt-0;
+                            }
+                             a {
+                                @apply flex items-center justify-center h-full w-full bg-gray-light text-center;
+                                &:hover {
+                                    @apply bg-primary text-white;
+                                }
+                                &.active {
+                                    @apply bg-primary text-white;
+                                }
+                            }
+                            
+                        }
+                        &.open {
+                            @apply top-[calc(100%-10px)] opacity-100 pointer-events-auto;
+                        }
+                        &:not(.open) {
+                            @apply opacity-0 pointer-events-none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.active {
+        @apply translate-x-0;
+        
+    }
+
+}
