@@ -253,7 +253,7 @@ function prefix_disable_gutenberg($current_status, $post_type)
     return $current_status;
 }
 
-@include 'testimonial-google-api.php';
-@include 'cpt.php';
-@include 'wysiwyg.php';
-@include 'cpt-offer.php';
+// @include 'testimonial-google-api.php';
+// @include 'cpt.php';
+// @include 'wysiwyg.php';
+// @include 'cpt-offer.php';

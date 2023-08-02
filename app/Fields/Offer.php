@@ -5,10 +5,6 @@ namespace App\Fields;
 use Log1x\AcfComposer\Field;
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
-use App\Fields\Partials\Offer\Premium;
-use App\Fields\Partials\Offer\Specialized;
-
-
 
 class Offer extends Field
 {
@@ -26,17 +22,7 @@ class Offer extends Field
 
         $offer
         
-        ->addGroup('offer', ['label' => "Oferta"])
-            ->addTab('hero-tab', ['label' => "Hero"])
-                ->addGroup('hero', ['label' => "Hero"])
-                    ->addWysiwyg('title', ['label' => "Tytuł"])
-                    ->addWysiwyg('subtitle', ['label' => "Podtytuł"])
-                ->endGroup()
-            ->addTab('offer_premium-tab', ['label' => "Stolarka Premium"])
-                ->addFields($this->get(Premium::class)) 
-            ->addTab('offer_standard-tab', ['label' => "Stolarka Specjalistyczna"])
-                ->addFields($this->get(Specialized::class))
-        ->endGroup()
+        
         
         ;
 

@@ -32,12 +32,7 @@ class Front extends Field
 
             ->addTab('hero', ['label' => 'Hero', 'placement' => 'left'])
                 ->addFields($this->get(Hero::class)) 
-            ->addTab('offer', ['label' => 'Oferta', 'placement' => 'left'])
-                ->addFields($this->get(Offer::class))
-            ->addTab('emdoro', ['label' => 'EmDoro', 'placement' => 'left'])
-                ->addFields($this->get(EmDoro::class))
-            ->addTab('references', ['label' => 'Referencje', 'placement' => 'left'])
-                ->addFields($this->get(References::class))
+            -
            
 
             ;

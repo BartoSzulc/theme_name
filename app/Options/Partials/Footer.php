@@ -42,10 +42,6 @@ class Footer extends Partial
                     ->addWysiwyg('footer_content--right--content', ['label' => 'Treść'])
                 ->endGroup()
             ->addAccordion('content_accordion_end')->endPoint()
-
-
-
-            
             
             ;
 

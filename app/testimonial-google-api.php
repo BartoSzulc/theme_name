@@ -41,8 +41,8 @@ function import_places_data_from_api() {
     }
 
     $language = "pl";
-    $place_id = "ChIJn875_9JQAkcRCbhpHlqyarE";
-    $api_key = "AIzaSyD-2XCusq0aMzCuOSc28MkqLLLUZEjjJFs";
+    $place_id = "";
+    $api_key = "";
     $url = "https://maps.googleapis.com/maps/api/place/details/json?place_id=$place_id&fields=name,rating,review&language=$language&key=$api_key";
 
     $curl = curl_init($url);
