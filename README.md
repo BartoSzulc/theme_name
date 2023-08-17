@@ -1,5 +1,3 @@
-# Landing Page for braciakonieczni.pl
-
 [![Version](https://badgen.net/badge/release/v1.0.0/green)]()
 [![Node Version](https://badgen.net/badge/node/>=16/green)]()
 
